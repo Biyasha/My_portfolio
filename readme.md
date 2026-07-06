@@ -2,47 +2,47 @@
 
 Welcome to my personal portfolio website!
 
-This portfolio showcases my skills, projects, certifications, education, and provides a way to connect with me.
+This portfolio showcases my skills, education, certifications, projects, and provides an easy way to connect with me.
 
-## 🚀 Live Demo
+## 🚀 Live Website
 
-🔗 https://your-website-url.com
+🔗 **https://biyasha.github.io/My_portfolio/**
 
-## 📸 Preview
+---
 
-(Add a screenshot of your portfolio homepage here)
+## 📸 Portfolio Preview
+
+![Portfolio Preview](assets/portfolio-preview.png)
 
 ---
 
 ## 👩‍💻 About Me
 
-I'm Dominic Biyasha, an Artificial Intelligence & Machine Learning undergraduate at KGiSL Institute of Technology.
+Hi! I'm **Dominic Biyasha**, an Artificial Intelligence & Machine Learning undergraduate at **KGiSL Institute of Technology**.
 
 I'm passionate about:
-
 - 🤖 Artificial Intelligence
 - 💻 Software Development
 - 🌐 Web Development
-- 📊 Data Analysis
-- 🚀 Building real-world applications
+- 🐍 Python Programming
+- 📊 Problem Solving
 
 ---
 
 ## ✨ Features
 
 - Responsive Design
-- Modern UI
-- Animated Sections
-- Skills Progress Bars
+- Modern UI/UX
+- Animated Hero Section
+- Skills Progress Animation
 - Education Timeline
-- Certificates Showcase
-- Featured Projects
-- Hire Me Page
-- Working Contact Form (EmailJS)
+- Certificates Section
+- Projects Showcase
 - Resume Download
-- Scroll Progress Bar
-- Back To Top Button
-- Loading Screen
+- Working Contact Form (EmailJS)
+- Hire Me Page
+- Smooth Scrolling
+- GitHub Pages Deployment
 
 ---
 
@@ -59,51 +59,32 @@ I'm passionate about:
 ## 📂 Project Structure
 
 ```
-Portfolio/
+My_portfolio/
 │
 ├── index.html
-├── hire.html
 ├── contact.html
+├── hire.html
 ├── style.css
-├── hire.css
 ├── contact.css
-├── images/
+├── hire.css
+├── logo.png
+├── main.jpg
 ├── resume/
 └── README.md
 ```
 
 ---
 
-## 📌 Featured Project
+## 📬 Contact
 
-### PyXcel Automator
+📧 Email: **dominicbiyasha@gmail.com**
 
-An AI-powered desktop application for Excel automation.
+🐙 GitHub: **https://github.com/Biyasha**
 
-**Features**
+💼 LinkedIn: **https://www.linkedin.com/in/dominic-biyasha/**
 
-- Data Cleaning
-- Excel Merge
-- Sort & Filter
-- Charts
-- AI-powered Workflow
-
-**Tech Used**
-
-Python • Pandas • OpenPyXL • PySide6
+🌐 Portfolio: **https://biyasha.github.io/My_portfolio/**
 
 ---
 
-## 📫 Contact
-
-📧 Email: dominicbiyasha@gmail.com
-
-💻 GitHub:
-https://github.com/Biyasha
-
-💼 LinkedIn:
-https://www.linkedin.com/in/dominic-biyasha/
-
----
-
-⭐ If you like this portfolio, feel free to star the repository!
+⭐ Thank you for visiting my portfolio!

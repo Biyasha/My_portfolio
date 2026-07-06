@@ -12,7 +12,7 @@ This portfolio showcases my skills, education, certifications, projects, and pro
 
 ## 📸 Portfolio Preview
 
-![Portfolio Preview](assets/portfolio-preview.png)
+![Portfolio Preview](assets/Screenshot%202026-07-06%20191700.png)
 
 ---
 

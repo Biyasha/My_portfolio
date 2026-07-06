@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Let's Connect | Dominic Biyasha</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Portfolio
+    </a>
+
+    <section class="connect">
+
+        <h1>Let's <span>Connect</span> 🚀</h1>
+        <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and
+            innovation.</p>
+        <form id="contact-form">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="text" name="subject" placeholder="Subject" required>
+
+            <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <div class="success-message" id="success-message">
+
+            <div class="checkmark">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <h2>Thank You!</h2>
+
+            <p>
+                Your message has been sent successfully.
+                <br>
+                I'll get back to you as soon as possible.
+            </p>
+
+            <a href="index.html" class="btn">
+                Back to Portfolio
+            </a>
+
+        </div>
+
+        <div class="social-links">
+
+            <a href="mailto:dominicbiyasha@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/Biyasha" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dominic-biyasha/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+const form = document.getElementById("contact-form");
+const success = document.getElementById("success-message");
+const btn = form.querySelector("button");
+
+emailjs.init("CH9NXnHTsPE7my8nr");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    btn.disabled = true;
+    btn.innerHTML = "Sending...";
+
+    emailjs.sendForm(
+        "service_ph4xa4d",
+        "template_0guuz1s",
+        form
+    )
+
+    emailjs.send(
+       "service_ph4xa4d",
+        "template_6803mrz", // Auto reply to visitor
+    {
+        name: form.name.value,
+        email: form.email.value,
+        subject: form.subject.value
+    }
+    )
+
+    .then(() => {
+
+        form.reset();
+
+        btn.disabled = false;
+        btn.innerHTML = "Send Message";
+
+        form.style.display="none";
+        success.style.display="block";
+
+    })
+
+    .catch((error)=>{
+
+        btn.disabled=false;
+        btn.innerHTML="Send Message";
+
+        alert("Something went wrong!");
+
+        console.log(error);
+
+    });
+
+});
+</script>
+</body>
+
+</html>
